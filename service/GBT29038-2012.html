@@ -1,0 +1,112 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta name="viewport" content="width = 1050, user-scalable = no" />
+    <script type="text/javascript" src="../static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../static/js/modernizr.2.5.3.min.js"></script>
+</head>
+
+<body>
+
+    <div class="flipbook-viewport">
+        <div class="container">
+            <div class="flipbook">
+                <div style="background-image:url(../picture/std/GBT29038-2012/1.jpg)"></div>
+                <div style="background-image:url(../picture/std/GBT29038-2012/2.jpg)"></div>
+                <div style="background-image:url(../picture/std/GBT29038-2012/3.jpg)"></div>
+                <div style="background-image:url(../picture/std/GBT29038-2012/4.jpg)"></div>
+                <div style="background-image:url(../picture/std/GBT29038-2012/5.jpg)"></div>
+                <div style="background-image:url(../picture/std/GBT29038-2012/6.jpg)"></div>
+                <div style="background-image:url(../picture/std/GBT29038-2012/7.jpg)"></div>
+                <div style="background-image:url(../picture/std/GBT29038-2012/8.jpg)"></div>
+                <div style="background-image:url(../picture/std/GBT29038-2012/9.jpg)"></div>
+                <div style="background-image:url(../picture/std/GBT29038-2012/10.jpg)"></div>
+                <div style="background-image:url(../picture/std/GBT29038-2012/11.jpg)"></div>
+                <div style="background-image:url(../picture/std/GBT29038-2012/12.jpg)"></div>
+                <div style="background-image:url(../picture/std/GBT29038-2012/13.jpg)"></div>
+                <div style="background-image:url(../picture/std/GBT29038-2012/14.jpg)"></div>
+                <div style="background-image:url(../picture/std/GBT29038-2012/15.jpg)"></div>
+                <div style="background-image:url(../picture/std/GBT29038-2012/16.jpg)"></div>
+                <div style="background-image:url(../picture/std/GBT29038-2012/17.jpg)"></div>
+                <div style="background-image:url(../picture/std/GBT29038-2012/18.jpg)"></div>
+                <div style="background-image:url(../picture/std/GBT29038-2012/19.jpg)"></div>
+                <div style="background-image:url(../picture/std/GBT29038-2012/20.jpg)"></div>
+                <div style="background-image:url(../picture/std/GBT29038-2012/21.jpg)"></div>
+                <div style="background-image:url(../picture/std/GBT29038-2012/22.jpg)"></div>
+                <div style="background-image:url(../picture/std/GBT29038-2012/23.jpg)"></div>
+                <div style="background-image:url(../picture/std/GBT29038-2012/24.jpg)"></div>
+                <div style="background-image:url(../picture/std/GBT29038-2012/25.jpg)"></div>
+                <div style="background-image:url(../picture/std/GBT29038-2012/26.jpg)"></div>
+                <div style="background-image:url(../picture/std/GBT29038-2012/27.jpg)"></div>
+                <div style="background-image:url(../picture/std/GBT29038-2012/28.jpg)"></div>
+                <div style="background-image:url(../picture/std/GBT29038-2012/29.jpg)"></div>
+                <div style="background-image:url(../picture/std/GBT29038-2012/30.jpg)"></div>
+                <div style="background-image:url(../picture/std/GBT29038-2012/31.jpg)"></div>
+                <div style="background-image:url(../picture/std/GBT29038-2012/32.jpg)"></div>
+                <div style="background-image:url(../picture/std/GBT29038-2012/33.jpg)"></div>
+                <div style="background-image:url(../picture/std/GBT29038-2012/34.jpg)"></div>
+                <div style="background-image:url(../picture/std/GBT29038-2012/35.jpg)"></div>
+                <div style="background-image:url(../picture/std/GBT29038-2012/36.jpg)"></div>
+                <div style="background-image:url(../picture/std/GBT29038-2012/37.jpg)"></div>
+                <div style="background-image:url(../picture/std/GBT29038-2012/38.jpg)"></div>
+                <div style="background-image:url(../picture/std/GBT29038-2012/39.jpg)"></div>
+                <div style="background-image:url(../picture/std/GBT29038-2012/40.jpg)"></div>
+                <div style="background-image:url(../picture/std/GBT29038-2012/41.jpg)"></div>
+                <div style="background-image:url(../picture/std/GBT29038-2012/42.jpg)"></div>
+                <div style="background-image:url(../picture/std/GBT29038-2012/43.jpg)"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+        function loadApp() {
+
+            // Create the flipbook
+
+            $('.flipbook').turn({
+                // Width
+
+                width: 922,
+
+                // Height
+
+                height: 600,
+
+                // Elevation
+
+                elevation: 50,
+
+                // Enable gradients
+
+                gradients: true,
+
+                // Auto center this flipbook
+
+                autoCenter: true
+
+            });
+        }
+
+        // Load the HTML4 version if there's not CSS transform
+
+        yepnope({
+            test: Modernizr.csstransforms,
+            yep: ['../static/js/turn.min.js'],
+            nope: ['../static/js/turn.html4.min.js'],
+            both: ['../static/css/basic.css'],
+            complete: loadApp
+        });
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+#!/bin/sh
+mkdir  CJJT110-2017
+mkdir  CJJT154-2020
+mkdir  CJT151-2016
+mkdir  CJT152-2016
+mkdir  CJT466-2014
+mkdir  GB50015-2019
+mkdir  GBT12771-2019
+mkdir  GBT19228.1-2011
+mkdir  GBT19228.2-2011
+mkdir  GBT19228.3-2012
+mkdir  GBT29038-2012
+mkdir  GBT33926-2017
+mkdir  GBT50378-2019
