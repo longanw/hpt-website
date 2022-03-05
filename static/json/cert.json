@@ -1,0 +1,124 @@
+{
+    "lists": [
+        {
+            "title": "营业执照",
+            "pic": "picture/cert/license.jpg",
+            "alt": "营业执照"
+        },
+        {
+            "title": "AAA级信用企业",
+            "pic": "picture/cert/AAA-board.jpg",
+            "alt": "AAA级信用企业"
+        },
+        {
+            "title": "中国建设工程推荐品牌",
+            "pic": "picture/cert/Recommended.jpg",
+            "alt": "中国建设工程推荐品牌"
+        },
+        {
+            "title": "中国绿色环保产品",
+            "pic": "picture/cert/GreenProducts.jpg",
+            "alt": "中国绿色环保产品"
+        },
+        {
+            "title": "管材涉水批文",
+            "pic": "picture/cert/health-cert01.jpg",
+            "alt": "管材涉水批文"
+        },
+        {
+            "title": "管件涉水批文",
+            "pic": "picture/cert/health-cert02.jpg",
+            "alt": "管件涉水批文"
+        },
+        {
+            "title": "ISO9001质量认证",
+            "pic": "picture/cert/ISO9001.jpg",
+            "alt": "ISO9001质量认证"
+        },
+        {
+            "title": "ISO14001环境认证",
+            "pic": "picture/cert/ISO14001.jpg",
+            "alt": "ISO14001环境认证"
+        },
+        {
+            "title": "ISO45001职业健康安全认证",
+            "pic": "picture/cert/ISO45001.jpg",
+            "alt": "ISO45001职业健康安全认证"
+        },
+        {
+            "title": "AAA级信用企业",
+            "pic": "picture/cert/AAA-Credit.jpg",
+            "alt": "AAA级信用企业"
+        },
+        {
+            "title": "AAA级重合同守信用企业",
+            "pic": "picture/cert/AAA-CT.jpg",
+            "alt": "AAA级重合同守信用企业"
+        },
+        {
+            "title": "AAA级诚信经营示范单位",
+            "pic": "picture/cert/AAA-IMD.jpg",
+            "alt": "AAA级诚信经营示范单位"
+        },
+        {
+            "title": "AAA级质量服务诚信单位",
+            "pic": "picture/cert/AAA-QS.jpg",
+            "alt": "AAA级质量服务诚信单位"
+        },
+        {
+            "title": "AAA级诚信供应商",
+            "pic": "picture/cert/AAA-CS.jpg",
+            "alt": "AAA级诚信供应商"
+        },
+        {
+            "title": "中国诚信企业家",
+            "pic": "picture/cert/Dongjicheng.jpg",
+            "alt": "中国诚信企业家"
+        },
+        {
+            "title": "中国诚信企业家",
+            "pic": "picture/cert/Dongjicheng-en.jpg",
+            "alt": "中国诚信企业家"
+        },
+        {
+            "title": "管材检验报告（检验检疫）",
+            "pic": "picture/cert/MA8-01.jpg",
+            "alt": "管材检验报告（检验检疫）"
+        },
+        {
+            "title": "管材检验报告（检验检疫）",
+            "pic": "picture/cert/MA8-02.jpg",
+            "alt": "管材检验报告（检验检疫）"
+        },
+        {
+            "title": "管材检验报告（检验检疫）",
+            "pic": "picture/cert/MA8-03.jpg",
+            "alt": "管材检验报告（检验检疫）"
+        },
+        {
+            "title": "管材检验报告（检验检疫）",
+            "pic": "picture/cert/MA8-04.jpg",
+            "alt": "管材检验报告（检验检疫）"
+        },
+        {
+            "title": "管件检验报告（检验检疫）",
+            "pic": "picture/cert/MA9-01.jpg",
+            "alt": "管件检验报告（检验检疫）"
+        },
+        {
+            "title": "管件检验报告（检验检疫）",
+            "pic": "picture/cert/MA9-02.jpg",
+            "alt": "管件检验报告（检验检疫）"
+        },
+        {
+            "title": "管件检验报告（检验检疫）",
+            "pic": "picture/cert/MA9-03.jpg",
+            "alt": "管件检验报告（检验检疫）"
+        },
+        {
+            "title": "管件检验报告（检验检疫）",
+            "pic": "picture/cert/MA9-04.jpg",
+            "alt": "管件检验报告（检验检疫）"
+        }
+    ]
+}

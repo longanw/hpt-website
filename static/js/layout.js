@@ -10,23 +10,17 @@
             var imgClass = $img.attr('class');
             var imgURL = $img.attr('src');
             jQuery.get(imgURL, function (data) {
-                // Get the SVG tag, ignore the rest
                 var $svg = jQuery(data).find('svg');
-                // Add replaced image's ID to the new SVG
                 if (typeof imgID !== 'undefined') {
                     $svg = $svg.attr('id', imgID);
                 }
-                // Add replaced image's classes to the new SVG
                 if (typeof imgClass !== 'undefined') {
                     $svg = $svg.attr('class', imgClass + ' replaced-svg');
                 }
-                // Remove any invalid XML tags as per http://validator.w3.org
                 $svg = $svg.removeAttr('xmlns:a');
-                // Check if the viewport is set, else we gonna set it if we can.
                 if (!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
                     $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'));
                 }
-                // Replace image with new SVG
                 $img.replaceWith($svg);
             }, 'xml');
 
@@ -39,7 +33,7 @@
     $("#banner").owlCarousel({
         loop: true,
         dots: true,
-        nav: true, // Show next and prev buttons
+        nav: true,
         slideSpeed: 300,
         paginationSpeed: 400,
         autoplay: true,
@@ -70,7 +64,7 @@
         dots: true,
         autoHeight: true,
         autoHeightClass: 'owl-height',
-        nav: false, // Show next and prev buttons
+        nav: false,
         slideSpeed: 600,
         paginationSpeed: 400,
         singleItem: true,
@@ -81,7 +75,6 @@
             },
             768: {
                 items: 1,
-                nav: false
             },
             1000: {
                 items: 1,
@@ -101,8 +94,7 @@
         autoplayTimeout: 3000,
         loop: true,
         dots: false,
-        dotsEach: true,
-        nav: true, // Show next and prev buttons
+        nav: true,
         slideSpeed: 600,
         paginationSpeed: 400,
         singleItem: true,
@@ -120,7 +112,7 @@
             },
             1000: {
                 items: 3,
-                nav: false,
+                nav: true,
                 dots: false
             },
             1025: {
@@ -141,7 +133,7 @@
         loop: true,
         dots: false,
         dotsEach: true,
-        nav: true, // Show next and prev buttons
+        nav: false,
         slideSpeed: 300,
         paginationSpeed: 400,
         singleItem: true,
@@ -149,22 +141,18 @@
         responsive: {
             0: {
                 items: 1,
-                nav: false,
                 dots: true
             },
             768: {
                 items: 2,
-                nav: false,
                 dots: true
             },
             1000: {
                 items: 3,
-                nav: true,
                 dots: true
             },
             1025: {
                 items: 4,
-                nav: true,
                 dots: true
             },
         }
@@ -180,7 +168,7 @@
         loop: true,
         dots: false,
         margin: 20,
-        nav: false, // Show next and prev buttons
+        nav: false,
         slideSpeed: 300,
         paginationSpeed: 400,
         singleItem: true,
@@ -318,8 +306,8 @@
     ------------------------------- */
     $(window).on('load', function () {
         $('#status').fadeOut();
-        $('#preloader').delay(350).fadeOut('slow');
-        $('body').delay(350).css({
+        $('#preloader').delay(300).fadeOut('slow');
+        $('body').delay(300).css({
             'overflow': 'visible'
         });
     });
@@ -328,13 +316,11 @@
 
 
 $(function () {
-    //返回顶部
     $('.to-top').on('click', function () {
         $('html,body').stop().animate({
             'scrollTop': 0
         }, 200); //数字动画开始于离页面底部的距离
     });
-    //数字滚动效果
     function numscroll(e) {
         var i = e.parents("div").offset().top,
             t = e.attr("bolExec");
@@ -354,8 +340,6 @@ $(function () {
                 }, 50); //动画时长
         }(), e.attr("bolExec", !0))
     }
-    /*统一固定高度*/
-    //页面滚动
     function winScroll() {
         var t_top = $(window).scrollTop();
         $(".num").each(function (i) {
@@ -491,11 +475,129 @@ form.addEventListener("reset", (e) => {
     $("#message_res").empty();
 });
 
-$('.container .loadMore').loadMoreResults();
-
 var url;
 
 function openFile(url) {
     var fileDir = "..%2F..%2F..%2Fservice%2F"
-    window.open("static/pdfjs/web/viewer.html?file=" + fileDir + url);
+    var reg = RegExp("(http|ftp|https):\/\/[\s\S]*");
+    if (reg.test(url)) {
+        window.open("static/pdfjs/web/viewer.html?file=" + encodeURIComponent(url));
+    } else {
+        window.open("static/pdfjs/web/viewer.html?file=" + fileDir + url);
+    }
+
 };
+
+$(function () {
+    /*初始化*/
+    var counter = 0; /*计数器*/
+    var pageStart = 0; /*offset*/
+    var pageSize = 4; /*size*/
+
+    getCertData(pageStart, pageSize);
+
+    /*监听加载更多*/
+    $(document).on('click', '#load-more-cert', function () {
+        counter++;
+        pageStart = counter * pageSize;
+
+        getCertData(pageStart, pageSize);
+    });
+
+    function getCertData(offset, size) {
+        $.ajax({
+            type: 'GET',
+            url: 'static/json/cert.json',
+            dataType: 'json',
+            success: function (reponse) {
+
+                var data = reponse.lists;
+                var sum = reponse.lists.length;
+
+                var result = '';
+
+                if (sum - offset < size) {
+                    size = sum - offset;
+                }
+
+                for (var i = offset; i < (offset + size); i++) {
+                    result += '<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><div class="pmd-card pmd-card-border pmd-z-depth"><div class="cert pmd-card-media pmd-card-media-overlay"><img src="' +
+                        data[i].pic + '" alt="' +
+                        data[i].alt + '" title="' +
+                        data[i].title + '" class="response" />' +
+                        '</div></div></div>';
+                }
+
+                $('.lists-cert').append(result);
+
+                /*隐藏more*/
+                if ((offset + size) >= sum) {
+                    $("#load-more-cert").hide();
+                } else {
+                    $("#load-more-cert").show();
+                }
+            },
+            error: function (xhr, type) {
+                alert('传输数据出错了!');
+            }
+        });
+    }
+});
+
+
+$(function () {
+
+    /*初始化*/
+    var counter = 0; /*计数器*/
+    var pageStart = 0; /*offset*/
+    var pageSize = 4; /*size*/
+
+    getPartnerData(pageStart, pageSize);
+
+    /*监听加载更多*/
+    $(document).on('click', '#load-more-partner', function () {
+        counter++;
+        pageStart = counter * pageSize;
+
+        getPartnerData(pageStart, pageSize);
+    });
+
+    function getPartnerData(offset, size) {
+        $.ajax({
+            type: 'GET',
+            url: 'static/json/partner.json',
+            dataType: 'json',
+            success: function (reponse) {
+
+                var data = reponse.lists;
+                var sum = reponse.lists.length;
+
+                var result = '';
+
+                if (sum - offset < size) {
+                    size = sum - offset;
+                }
+
+                for (var i = offset; i < (offset + size); i++) {
+                    result += '<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><div class="pmd-card pmd-z-depth"><div class="pmd-card-media"><img src="' +
+                        data[i].pic + '" alt="' +
+                        data[i].alt + '" title="' +
+                        data[i].title + '" class="response" />' +
+                        '</div></div></div>';
+                }
+
+                $('.lists-partner').append(result);
+
+                /*隐藏more*/
+                if ((offset + size) >= sum) {
+                    $("#load-more-partner").hide();
+                } else {
+                    $("#load-more-partner").show();
+                }
+            },
+            error: function (xhr, type) {
+                alert('未能从服务器读取到数据!');
+            }
+        });
+    }
+});

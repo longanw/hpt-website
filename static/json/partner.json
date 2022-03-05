@@ -1,0 +1,44 @@
+{
+    "lists": [
+        {
+            "title": "深圳水务（集团）",
+            "pic": "picture/partner/HPT-partner1.jpg",
+            "alt": "深圳水务（集团）"
+        },
+        {
+            "title": "广州市番禺水务",
+            "pic": "picture/partner/HPT-partner2.jpg",
+            "alt": "广州市番禺水务"
+        },
+        {
+            "title": "长沙水业集团",
+            "pic": "picture/partner/HPT-partner3.jpg",
+            "alt": "长沙水业集团"
+        },
+        {
+            "title": "北京市自来水集团",
+            "pic": "picture/partner/HPT-partner4.jpg",
+            "alt": "北京市自来水集团"
+        },
+        {
+            "title": "中山公用水务",
+            "pic": "picture/partner/HPT-partner5.jpg",
+            "alt": "中山公用水务"
+        },
+        {
+            "title": "江门市自来水公司",
+            "pic": "picture/partner/HPT-partner6.jpg",
+            "alt": "江门市自来水公司"
+        },
+        {
+            "title": "增城新和自来水有限公司",
+            "pic": "picture/partner/HPT-partner7.jpg",
+            "alt": "增城新和自来水有限公司"
+        },
+        {
+            "title": "郑州市水务局",
+            "pic": "picture/partner/HPT-partner8.jpg",
+            "alt": "郑州市水务局"
+        }
+    ]
+}
