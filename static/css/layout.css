@@ -1394,15 +1394,128 @@ nav.navbar .navbar-nav > li > a.active {
     padding-left: 18px;
 }
 
-.js-load-more{
-    cursor:pointer;
-	padding:0 15px;
-	width:120px;
-	height:30px;
-	line-height:30px;
-	text-align:center;
-	margin:20px auto;
-	border:0 none;
-	font-size:12px;
-	display:none;/*默认不显示，ajax调用成功后才决定显示与否*/
+.js-load-more {
+    cursor: pointer;
+    padding: 0 15px;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin: 20px auto;
+    border: 0 none;
+    font-size: 12px;
+    display: none;
+    /*默认不显示，ajax调用成功后才决定显示与否*/
+}
+
+/*手机底部栏*/
+
+.tab-bar {
+    background-color: rgba(255, 255, 255, 0.85);
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 99;
+    box-shadow: 0 0px 10px #e8e6e6;
+    padding: 0 20px;
+}
+
+.tab-bar li {
+    width: 33.33333%;
+    float: left;
+    list-style-type: none
+}
+
+.tab-bar li a {
+    display: block;
+    text-align: center;
+    padding: 8px;
+    text-align: center;
+}
+
+.tab-bar li a.phone {
+    position: relative;
+}
+
+.tab-bar li a.phone .icon-wrap {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) rotate(180deg);
+    height: 30px;
+    width: 40px;
+    overflow: hidden;
+}
+
+.tab-bar li a.phone .icon-wrap::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #e8e6e6;
+}
+
+.tab-bar li a.phone .icon {
+    width: 30px;
+    height: 30px;
+    background-image: linear-gradient(to right, #fe794b, #fa4a27);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 5px 10px -5px #fe794b;
+}
+
+.tab-bar li a.phone span {
+    margin-top: 25px;
+}
+
+.tab-bar li a.phone .icon img {
+    width: 35%;
+}
+
+.tab-bar li a .img {
+    height: 20px;
+    margin-bottom: 5px;
+}
+
+.tab-bar li a .img img {
+    width: auto;
+    height: 100%;
+}
+
+.tab-bar li a span {
+    font-size: 14px;
+    color: #828282;
+    display: block;
+}
+
+@media (min-width: 480px) {
+    .tab-bar {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .btn.pmd-btn-fab i,
+    .btn.pmd-btn-fab span {
+        line-height: 40px;
+    }
+
+    .pmd-floating-action-btn .ink {
+        width: 20px;
+        height: 20px;
+    }
+
+    .pmd-btn-fab {
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+    }
 }
