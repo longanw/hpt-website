@@ -321,6 +321,7 @@ $(function () {
             'scrollTop': 0
         }, 200); //数字动画开始于离页面底部的距离
     });
+
     function numscroll(e) {
         var i = e.parents("div").offset().top,
             t = e.attr("bolExec");
@@ -340,6 +341,7 @@ $(function () {
                 }, 50); //动画时长
         }(), e.attr("bolExec", !0))
     }
+
     function winScroll() {
         var t_top = $(window).scrollTop();
         $(".num").each(function (i) {
@@ -488,6 +490,14 @@ function openFile(url) {
 
 };
 
+$.hulla = new hullabaloo();
+setTimeout(function () {
+    $.hulla.send("&#129409操作提示<br>点击图片可以查看详情。", "info");
+}, 5000);
+setTimeout(function () {
+    $.hulla.send("&#127873更多信息有待您的探索与发掘！", "success");
+}, 6000);
+
 $(function () {
     /*初始化*/
     var counter = 0; /*计数器*/
@@ -538,7 +548,9 @@ $(function () {
                 }
             },
             error: function (xhr, type) {
-                alert('传输数据出错了!');
+                setTimeout(function () {
+                    $.hulla.send("&#9889读取数据出错！", "warning");
+                }, 500);
             }
         });
     }
@@ -596,7 +608,9 @@ $(function () {
                 }
             },
             error: function (xhr, type) {
-                alert('未能从服务器读取到数据!');
+                setTimeout(function () {
+                    $.hulla.send("&#9889服务器出错！", "warning");
+                }, 1000);
             }
         });
     }
