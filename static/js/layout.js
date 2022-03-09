@@ -31,6 +31,7 @@
 		banner slider Carousel
  	------------------------------- */
     $("#banner").owlCarousel({
+        lazyLoad: true,
         loop: true,
         dots: true,
         nav: true,
@@ -60,6 +61,7 @@
 		Services Carousel
  	------------------------------- */
     $("#services-slider").owlCarousel({
+        lazyLoad: true,
         loop: true,
         dots: true,
         autoHeight: true,
@@ -89,6 +91,7 @@
 		Cases Carousel
  	------------------------------- */
     $("#cases-slider").owlCarousel({
+        lazyLoad: true,
         autoplay: true,
         autoplayHoverPause: true,
         autoplayTimeout: 3000,
@@ -123,45 +126,12 @@
         }
     });
 
-    /* ------------------------------
-		Standards Carousel
- 	------------------------------- */
-    $("#standards").owlCarousel({
-        autoplay: true,
-        autoplayHoverPause: true,
-        autoplayTimeout: 6000,
-        loop: true,
-        dots: false,
-        dotsEach: true,
-        nav: false,
-        slideSpeed: 300,
-        paginationSpeed: 400,
-        singleItem: true,
-        responsiveClass: true,
-        responsive: {
-            0: {
-                items: 1,
-                dots: true
-            },
-            768: {
-                items: 2,
-                dots: true
-            },
-            1000: {
-                items: 3,
-                dots: true
-            },
-            1025: {
-                items: 4,
-                dots: true
-            },
-        }
-    });
 
     /* ------------------------------
 		News Carousel
  	------------------------------- */
     $("#news").owlCarousel({
+        lazyLoad: true,
         autoplay: true,
         autoplayHoverPause: true,
         autoplayTimeout: 8000,
@@ -477,18 +447,39 @@ form.addEventListener("reset", (e) => {
     $("#message_res").empty();
 });
 
-var url;
+$("#viewer_flag").click(function () {
+    var i = $(this).attr("res");
+    if (i == 0) {
+        $(this).attr("res", "1");
+
+        $(this).html("");
+
+        $(this).html("快速浏览");
+
+    } else {
+        $(this).attr("res", "0");
+
+        $(this).html("");
+
+        $(this).html("详细浏览");
+
+    }
+
+});
+
 
 function openFile(url) {
     var fileDir = "..%2F..%2F..%2Fservice%2F"
-    var reg = RegExp("(http|ftp|https):\/\/[\s\S]*");
-    if (reg.test(url)) {
-        window.open("static/pdfjs/web/viewer.html?file=" + encodeURIComponent(url));
+    var i = $("#viewer_flag").attr("res");
+    //    var reg = RegExp("(http|ftp|https):\/\/[\s\S]*");
+    if (i == 0) {
+        window.open("static/quickviewer.html?file=" + fileDir + url);
     } else {
-        window.open("static/pdfjs/web/viewer.html?file=" + fileDir + url);
+        window.open("static/viewer.html?file=" + fileDir + url);
     }
 
 };
+
 
 $.hulla = new hullabaloo();
 setTimeout(function () {
@@ -534,7 +525,7 @@ $(function () {
                     result += '<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><div class="pmd-card pmd-card-border pmd-z-depth"><div class="cert pmd-card-media pmd-card-media-overlay"><img src="' +
                         data[i].pic + '" alt="' +
                         data[i].alt + '" title="' +
-                        data[i].title + '" class="response" />' +
+                        data[i].title + '" class="img-responsive" />' +
                         '</div></div></div>';
                 }
 
@@ -594,7 +585,7 @@ $(function () {
                     result += '<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><div class="pmd-card pmd-z-depth"><div class="pmd-card-media"><img src="' +
                         data[i].pic + '" alt="' +
                         data[i].alt + '" title="' +
-                        data[i].title + '" class="response" />' +
+                        data[i].title + '" class="img-responsive" />' +
                         '</div></div></div>';
                 }
 

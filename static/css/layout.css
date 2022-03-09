@@ -796,7 +796,7 @@ nav.navbar .navbar-nav > li > a.active {
     margin-bottom: 0;
 }
 
-/* section-What We Do Media Queries */
+/* section- Media Queries */
 @media screen and (max-width: 1300px) {
     .pmd-card-carousel .owl-next {
         right: -44px;

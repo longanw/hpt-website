@@ -1,0 +1,78 @@
+.lb_book-cover {
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
+    -webkit-transform-origin: left;
+    transform-origin: left;
+    top: 0;
+    background-color: #eee;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .22)
+}
+
+.lb_thumb {
+    border: none;
+    width: 140px;
+    height: 200px;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    cursor: pointer
+}
+
+.lb_thumb .lb_book-title {
+    bottom: -100%;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    padding: 5px;
+    font-size: 12px;
+    background: rgba(60, 60, 60, .8);
+    box-sizing: border-box;
+    display: block;
+    color: #fff;
+    transition: .4s;
+    -webkit-transition: .4s;
+    opacity: 0
+}
+
+.lb_thumb .lb_book-tag {
+    float: left;
+    padding: 0 4px 2px;
+    background-color: rgba(0, 0, 0, .26);
+    text-transform: uppercase;
+    font-size: 10px;
+    margin: -15px 0 0 2px;
+    z-index: -1;
+    color: rgba(255, 255, 255, .8);
+    position: relative
+}
+
+.lb_thumb-not-found .lb_book-title,
+.lb_thumb:hover .lb_book-title {
+    opacity: 1;
+    bottom: 0
+}
+
+.lb_thumb:hover .lb_book-cover {
+    -webkit-transform: rotateY(-20deg) rotateZ(0);
+    -moz-transform: rotateY(-20deg) rotateZ(0);
+    -ms-transform: rotateY(-20deg) rotateZ(0);
+    transform: rotateY(-20deg) rotateZ(0);
+    box-shadow: 3px 0 12px rgba(0, 0, 0, .6)
+}
+
+.df-webkit .lb_thumb:hover .lb_book-cover {
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    transform: none;
+    box-shadow: 1px 0 12px rgba(0, 0, 0, .6)
+}
