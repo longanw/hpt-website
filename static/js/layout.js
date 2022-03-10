@@ -454,14 +454,14 @@ $("#viewer_flag").click(function () {
 
         $(this).html("");
 
-        $(this).html("快速浏览");
+        $(this).html("详细浏览<img style='height: 12px' src='static/images/swap.png'>快速浏览");
 
     } else {
         $(this).attr("res", "0");
 
         $(this).html("");
 
-        $(this).html("详细浏览");
+        $(this).html("快速浏览<img style='height: 12px' src='static/images/swap.png'>详细浏览");
 
     }
 
@@ -469,7 +469,7 @@ $("#viewer_flag").click(function () {
 
 
 function openFile(url) {
-    var fileDir = "..%2F..%2F..%2Fservice%2F"
+    var fileDir = "..%2Fservice%2F"
     var i = $("#viewer_flag").attr("res");
     //    var reg = RegExp("(http|ftp|https):\/\/[\s\S]*");
     if (i == 0) {
@@ -605,4 +605,120 @@ $(function () {
             }
         });
     }
+
+});
+
+$(function () {
+
+    /*初始化*/
+    var counter = 0; /*计数器*/
+    var pageStart = 0; /*offset*/
+    var pageSize = 6; /*size*/
+
+    getStdData(pageStart, pageSize);
+
+    /*监听加载更多*/
+    $(document).on('click', '#load-more-standards', function () {
+        counter++;
+        pageStart = counter * pageSize;
+
+        getStdData(pageStart, pageSize);
+    });
+
+    function getStdData(offset, size) {
+        $.ajax({
+            type: 'GET',
+            url: 'static/json/standards.json',
+            dataType: 'json',
+            success: function (reponse) {
+
+                var data = reponse.lists;
+                var sum = reponse.lists.length;
+
+                var result = '';
+
+                if (sum - offset < size) {
+                    size = sum - offset;
+                }
+
+                for (var i = offset; i < (offset + size); i++) {
+                    result += '<div class="lb_thumb" style="margin: 20px"> <div class = "lb_book-cover" style = "background-image: url("' +
+                        data[i].pic + '" );" onclick="javascript:openFile("' +
+                        data[i].src + '");"><span class="lb_book-title">' +
+                        data[i].title + '</span></div> </div>';
+                }
+
+                $('.lists-standards').append(result);
+
+                /*隐藏more*/
+                if ((offset + size) >= sum) {
+                    $("#load-more-standards").hide();
+                } else {
+                    $("#load-more-standards").show();
+                }
+            },
+            error: function (xhr, type) {
+                setTimeout(function () {
+                    $.hulla.send("&#9889服务器未返回数据！", "warning");
+                }, 1000);
+            }
+        });
+    }
+});
+
+(function ($) {
+    $.fn.btnLoadmore = function (options) {
+        var defaults = {
+                showItem: 4,
+                whenClickBtn: 3,
+                textBtn: '加载更多',
+                classBtn: 'btn pmd-btn-flat pmd-ripple-effect btn-default',
+                setCookies: false,
+                delayToScroll: 1000,
+
+            },
+            options = $.extend(defaults, options);
+
+        this.each(function () {
+
+            var $this = $(this),
+                $childrenClass = $($this.children());
+
+            // Get Element Of contents to hide
+            $childrenClass.hide();
+
+            //Show Element from Options
+            $childrenClass.slice(0, defaults.showItem).show();
+
+            //Show Button when item in contents != 0
+            if ($childrenClass.filter(":hidden").length > 0) {
+                $this.after('<button type="button" class="btn-loadmore ' + defaults.classBtn + '">' + defaults.textBtn + '</button>')
+            }
+
+            $(document).on('click', '.btn-loadmore', function (e) {
+                e.preventDefault();
+                $childrenClass.filter(':hidden').slice(0, defaults.whenClickBtn).slideDown();
+                if ($childrenClass.filter(":hidden").length == 0) {
+                    $(".btn-loadmore").fadeOut('slow');
+                }
+            });
+
+            function scrollDown() {
+                $('html, body').animate({
+                    scrollTop: $childrenClass.filter(":visible").last().offset().top
+                }, defaults.delayToScroll);
+            }
+        });
+
+
+
+    }
+}(jQuery));
+
+$(document).ready(function () {
+    $('.contents').btnLoadmore({
+        showItem: 8,
+        whenClickBtn: 6,
+        textBtn: '--- 加载更多 ---'
+    });
 });
