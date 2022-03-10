@@ -844,7 +844,6 @@ nav.navbar .navbar-nav > li > a.active {
 }
 
 .site-footer {
-    background: url(../images/contact.jpg) center center no-repeat #1f2f46;
     background-size: cover;
     padding: 60px 0 0 0;
     position: relative;

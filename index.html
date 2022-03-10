@@ -12,9 +12,10 @@
     <link rel="icon" href="static/images/favicon.ico" type="image/x-icon" />
 
     <!--Google Material icon-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <!--    <link rel="stylesheet" href="static/css/bootstrap.min.css" type="text/css" media="all" />-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+<!--    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />-->
+    <link rel="stylesheet" href="static/css/material.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="static/css/bootstrap.min.css" type="text/css" media="all" />
+<!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">-->
     <link rel="stylesheet" href="static/css/propeller.min.css" type="text/css" media="all" />
     <link rel="stylesheet" href="static/css/owl.carousel.css" type="text/css" media="all" />
     <link rel="stylesheet" href="static/css/layout-theme.css" type="text/css" media="all" />
@@ -72,7 +73,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" title="" href="index.html">
-                    <img class="logo-dark" src="static/images/logo.png" alt="互配通logo" />
+                    <img class="lazyload logo-dark" src="static/images/logo-thumb.png" data-src="static/images/logo.png" alt="互配通logo" />
                 </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -110,7 +111,7 @@
 
     <!-- banner section 四大应用领域 -->
     <div id="banner" class="banner-section owl-carousel text-center">
-        <div class="banner-img banner-banner-left" style="background-image: url('static/images/bg-1.jpg'); background-size: cover;">
+        <div class="banner-img banner-banner-left lazyload" style="background-image: url('static/images/bg-1-thumb.jpg'); background-size: cover;" data-src="static/images/bg-1.jpg">
             <div class="container">
                 <div class="banner-text">
                     <h1 class="inverse">助力中国制造</h1>
@@ -119,7 +120,7 @@
                 </div>
             </div>
         </div>
-        <div class="banner-img" style="background-image: url('static/images/bg-2.jpg'); background-size: cover;">
+        <div class="banner-img lazyload" style="background-image: url('static/images/bg-2-thumb.jpg'); background-size: cover;" data-src="static/images/bg-2.jpg">
             <div class="container">
                 <div class="banner-text">
                     <h1 class="inverse">创造绿色、环保、健康的环境</h1>
@@ -128,7 +129,7 @@
                 </div>
             </div>
         </div>
-        <div class="banner-img" style="background-image: url('static/images/bg-3.jpg'); background-size: cover;">
+        <div class="banner-img lazyload" style="background-image: url('static/images/bg-3-thumb.jpg'); background-size: cover;" data-src="static/images/bg-3.jpg">
             <div class="container">
                 <div class="banner-text">
                     <h1 class="inverse">保障公共设施用水用气安全稳定</h1>
@@ -137,7 +138,7 @@
                 </div>
             </div>
         </div>
-        <div class="banner-img" style="background-image: url('static/images/bg-4.jpg'); background-size: cover;">
+        <div class="banner-img lazyload" style="background-image: url('static/images/bg-4-thumb.jpg'); background-size: cover;" data-src="static/images/bg-4.jpg">
             <div class="container">
                 <div class="banner-text">
                     <h1 class="inverse">为水务系统降本增效</h1>
@@ -867,16 +868,16 @@
             <p class="lead text-center">技术相关资料可在线浏览（本站将会根据标准或者项目实施的情况实时更新），如需下载请留言联系网站管理员。</p>
             <div class="row">
                 <div class="lb_thumb" style="margin: 20px">
-                    <div class="lb_book-cover" style="background-image: url('picture/tech/products.jpg');" onclick="javascript:openFile('tech%2F00%E4%BA%92%E9%85%8D%E9%80%9A%E4%B8%8D%E9%94%88%E9%92%A2%E7%AE%A1%E9%81%93%E4%BA%A7%E5%93%81%E7%94%BB%E5%86%8C-202106.pdf');"><span class="lb_book-title">互配通产品图册</span></div>
+                    <div class="lb_book-cover lazyload" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7');" onclick="javascript:openFile('tech%2F00%E4%BA%92%E9%85%8D%E9%80%9A%E4%B8%8D%E9%94%88%E9%92%A2%E7%AE%A1%E9%81%93%E4%BA%A7%E5%93%81%E7%94%BB%E5%86%8C-202106.pdf');" data-src="picture/tech/products.jpg"><span class="lb_book-title">互配通产品图册</span></div>
                 </div>
                 <div class="lb_thumb" style="margin: 20px">
-                    <div class="lb_book-cover" style="background-image: url('picture/tech/fitting-pression-book.jpg');" onclick="javascript:openFile('tech%2F01%E5%8D%A1%E5%8E%8B%E5%AE%89%E8%A3%85%E6%8A%80%E6%9C%AF%E6%8C%87%E5%AF%BC%E4%B9%A6.pdf');"><span class="lb_book-title">双卡压安装指导书</span></div>
+                    <div class="lb_book-cover lazyload" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7');" onclick="javascript:openFile('tech%2F01%E5%8D%A1%E5%8E%8B%E5%AE%89%E8%A3%85%E6%8A%80%E6%9C%AF%E6%8C%87%E5%AF%BC%E4%B9%A6.pdf');" data-src="picture/tech/fitting-pression-book.jpg"><span class="lb_book-title">双卡压安装指导书</span></div>
                 </div>
                 <div class="lb_thumb" style="margin: 20px">
-                    <div class="lb_book-cover" style="background-image: url('picture/tech/ring-book.jpg');" onclick="javascript:openFile('tech%2F03%E7%8E%AF%E5%8E%8B%E5%AE%89%E8%A3%85%E6%8A%80%E6%9C%AF%E6%8C%87%E5%AF%BC%E4%B9%A6.pdf');"><span class="lb_book-title">环压安装指导书</span></div>
+                    <div class="lb_book-cover lazyload" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7');" onclick="javascript:openFile('tech%2F03%E7%8E%AF%E5%8E%8B%E5%AE%89%E8%A3%85%E6%8A%80%E6%9C%AF%E6%8C%87%E5%AF%BC%E4%B9%A6.pdf');" data-src="picture/tech/ring-book.jpg"><span class="lb_book-title">环压安装指导书</span></div>
                 </div>
                 <div class="lb_thumb" style="margin: 20px">
-                    <div class="lb_book-cover" style="background-image: url('picture/tech/weld-book.jpg');" onclick="javascript:openFile('tech%2F02%E7%84%8A%E6%8E%A5%E5%AE%89%E8%A3%85%E6%8A%80%E6%9C%AF%E6%8C%87%E5%AF%BC%E4%B9%A6.pdf');"><span class="lb_book-title">焊接安装指导书</span></div>
+                    <div class="lb_book-cover lazyload" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7');" onclick="javascript:openFile('tech%2F02%E7%84%8A%E6%8E%A5%E5%AE%89%E8%A3%85%E6%8A%80%E6%9C%AF%E6%8C%87%E5%AF%BC%E4%B9%A6.pdf');" data-src="picture/tech/weld-book.jpg"><span class="lb_book-title">焊接安装指导书</span></div>
                 </div>
 
             </div>
@@ -886,55 +887,55 @@
             <h2 class="text-center">标准浏览</h2>
             <p class="lead text-center">为方便客户查阅现行的水行业相关标准规范，本站提供了国家标准、规范及地方（或行业）标准、规范的在线浏览功能，不提供下载服务，如有需要请自行到书店或者服务商处进行购买，敬请谅解。</p>
             <div class="lb_thumb item" style="margin: 20px">
-                <div class="lb_book-cover" style="background-image: url('picture/std/CJJT154-2020_cover.jpg');" onclick="javascript:openFile('std%2F5ad145063221e09b0e9a05059c3d0757.pdf');"><span class="lb_book-title">CJJ/T 154-2020《建筑给水金属管道工程技术标准》</span></div>
+                <div class="lb_book-cover lazyload" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7');" onclick="javascript:openFile('std%2F5ad145063221e09b0e9a05059c3d0757.pdf');"data-src="picture/std/CJJT154-2020_cover.jpg"><span class="lb_book-title">CJJ/T 154-2020《建筑给水金属管道工程技术标准》</span></div>
             </div>
 
             <div class="lb_thumb item" style="margin: 20px">
-                <div class="lb_book-cover" style="background-image: url('picture/std/GBT12771-2019_cover.jpg');" onclick="javascript:openFile('std%2F9826df1ba0e37da4a467a29411cfb770.pdf');"><span class="lb_book-title">GB/T 12771-2019《流体输送用不锈钢焊接钢管》</span></div>
+                <div class="lb_book-cover lazyload" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7');" onclick="javascript:openFile('std%2F9826df1ba0e37da4a467a29411cfb770.pdf');"data-src="picture/std/GBT12771-2019_cover.jpg"><span class="lb_book-title">GB/T 12771-2019《流体输送用不锈钢焊接钢管》</span></div>
             </div>
 
             <div class="lb_thumb item" style="margin: 20px">
-                <div class="lb_book-cover" style="background-image: url('picture/std/GB50015-2019_cover.jpg');" onclick="javascript:openFile('std%2F5780f972873e72a7d50ddbb4a51d1ad9.pdf');"><span class="lb_book-title">GB 50015-2019《建筑给水排水设计标准》</span></div>
+                <div class="lb_book-cover lazyload" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7');" onclick="javascript:openFile('std%2F5780f972873e72a7d50ddbb4a51d1ad9.pdf');"data-src="picture/std/GB50015-2019_cover.jpg"><span class="lb_book-title">GB 50015-2019《建筑给水排水设计标准》</span></div>
             </div>
 
             <div class="lb_thumb item" style="margin: 20px">
-                <div class="lb_book-cover" style="background-image: url('picture/std/GBT50378-2019_cover.jpg');" onclick="javascript:openFile('std%2Fbb5f571ce50456b895bf11fe2f266baa.pdf');"><span class="lb_book-title">GB/T 50378-2019《绿色建筑评价标准》</span></div>
+                <div class="lb_book-cover lazyload" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7');" onclick="javascript:openFile('std%2Fbb5f571ce50456b895bf11fe2f266baa.pdf');"data-src="picture/std/GBT50378-2019_cover.jpg"><span class="lb_book-title">GB/T 50378-2019《绿色建筑评价标准》</span></div>
             </div>
 
             <div class="lb_thumb item" style="margin: 20px">
-                <div class="lb_book-cover" style="background-image: url('picture/std/GBT33926-2017_cover.jpg');" onclick="javascript:openFile('std%2F181620f318404829f16a79e05a34bffe.pdf');"><span class="lb_book-title">GB/T 33926-2017《不锈钢环压式管件》</span></div>
+                <div class="lb_book-cover lazyload" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7');" onclick="javascript:openFile('std%2F181620f318404829f16a79e05a34bffe.pdf');"data-src="picture/std/GBT33926-2017_cover.jpg"><span class="lb_book-title">GB/T 33926-2017《不锈钢环压式管件》</span></div>
             </div>
 
             <div class="lb_thumb item" style="margin: 20px">
-                <div class="lb_book-cover" style="background-image: url('picture/std/CJJT110-2017_cover.jpg');" onclick="javascript:openFile('std%2F7984c84bf85403266378a392cb77b6a4.pdf');"><span class="lb_book-title">CJJ/T 110-2017《建筑与小区管道直饮水系统技术规程》</span></div>
+                <div class="lb_book-cover lazyload" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7');" onclick="javascript:openFile('std%2F7984c84bf85403266378a392cb77b6a4.pdf');"data-src="picture/std/CJJT110-2017_cover.jpg"><span class="lb_book-title">CJJ/T 110-2017《建筑与小区管道直饮水系统技术规程》</span></div>
             </div>
 
             <div class="lb_thumb item" style="margin: 20px">
-                <div class="lb_book-cover" style="background-image: url('picture/std/CJT151-2016_cover.jpg');" onclick="javascript:openFile('std%2F6bca2a6521b748950e5ecb228724a235.pdf');"><span class="lb_book-title">CJ/T 151-2016《薄壁不锈钢管》</span></div>
+                <div class="lb_book-cover lazyload" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7');" onclick="javascript:openFile('std%2F6bca2a6521b748950e5ecb228724a235.pdf');"data-src="picture/std/CJT151-2016_cover.jpg"><span class="lb_book-title">CJ/T 151-2016《薄壁不锈钢管》</span></div>
             </div>
 
             <div class="lb_thumb item" style="margin: 20px">
-                <div class="lb_book-cover" style="background-image: url('picture/std/CJT152-2016_cover.jpg');" onclick="javascript:openFile('std%2F66ab8f3ddd4968a7e42617ddaf2b4174.pdf');"><span class="lb_book-title">CJ/T 152-2016《薄壁不锈钢卡压式和沟槽式管件》</span></div>
+                <div class="lb_book-cover lazyload" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7');" onclick="javascript:openFile('std%2F66ab8f3ddd4968a7e42617ddaf2b4174.pdf');"data-src="picture/std/CJT152-2016_cover.jpg"><span class="lb_book-title">CJ/T 152-2016《薄壁不锈钢卡压式和沟槽式管件》</span></div>
             </div>
 
             <div class="lb_thumb item" style="margin: 20px">
-                <div class="lb_book-cover" style="background-image: url('picture/std/CJT466-2014_cover.jpg');" onclick="javascript:openFile('std%2F29c7e6d9a33fa9de017fd534de26ba07.pdf');"><span class="lb_book-title">CJ/T 466-2014《燃气输送用不锈钢管及双卡压式管件》</span></div>
+                <div class="lb_book-cover lazyload" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7');" onclick="javascript:openFile('std%2F29c7e6d9a33fa9de017fd534de26ba07.pdf');"data-src="picture/std/CJT466-2014_cover.jpg"><span class="lb_book-title">CJ/T 466-2014《燃气输送用不锈钢管及双卡压式管件》</span></div>
             </div>
 
             <div class="lb_thumb item" style="margin: 20px">
-                <div class="lb_book-cover" style="background-image: url('picture/std/GBT29038-2012_cover.jpg');" onclick="javascript:openFile('std%2F0494e2cda38f8ac38c671b15bc3e7c41.pdf');"><span class="lb_book-title">GB/T 29038-2012《薄壁不锈钢管道技术规范》</span></div>
+                <div class="lb_book-cover lazyload" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7');" onclick="javascript:openFile('std%2F0494e2cda38f8ac38c671b15bc3e7c41.pdf');"data-src="picture/std/GBT29038-2012_cover.jpg"><span class="lb_book-title">GB/T 29038-2012《薄壁不锈钢管道技术规范》</span></div>
             </div>
 
             <div class="lb_thumb item" style="margin: 20px">
-                <div class="lb_book-cover" style="background-image: url('picture/std/GBT19228.3-2012_cover.jpg');" onclick="javascript:openFile('std%2F9dae34b91352802660705caff814229f.pdf');"><span class="lb_book-title">GB/T 19228.3-2012《不锈钢卡压式管件组件 第3部分 O型橡胶密封圈》</span></div>
+                <div class="lb_book-cover lazyload" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7');" onclick="javascript:openFile('std%2F9dae34b91352802660705caff814229f.pdf');"data-src="picture/std/GBT19228.3-2012_cover.jpg"><span class="lb_book-title">GB/T 19228.3-2012《不锈钢卡压式管件组件 第3部分 O型橡胶密封圈》</span></div>
             </div>
 
             <div class="lb_thumb item" style="margin: 20px">
-                <div class="lb_book-cover" style="background-image: url('picture/std/GBT19228.2-2011_cover.jpg');" onclick="javascript:openFile('std%2F49bbeafb35c76da2b3d86162e5378e2a.pdf');"><span class="lb_book-title">GB/T 19228.2-2011《不锈钢卡压式管件组件 第2部分 连接用薄壁不锈钢管》</span></div>
+                <div class="lb_book-cover lazyload" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7');" onclick="javascript:openFile('std%2F49bbeafb35c76da2b3d86162e5378e2a.pdf');"data-src="picture/std/GBT19228.2-2011_cover.jpg"><span class="lb_book-title">GB/T 19228.2-2011《不锈钢卡压式管件组件 第2部分 连接用薄壁不锈钢管》</span></div>
             </div>
 
             <div class="lb_thumb item" style="margin: 20px">
-                <div class="lb_book-cover" style="background-image: url('picture/std/GBT19228.1-2011_cover.jpg');" onclick="javascript:openFile('std%2Fac901042db6edd667168ff8c157a2e9f.pdf');"><span class="lb_book-title">GB/T 19228.1-2011《不锈钢卡压式管件组件 第1部分 卡压式管件》</span></div>
+                <div class="lb_book-cover lazyload" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7');" onclick="javascript:openFile('std%2Fac901042db6edd667168ff8c157a2e9f.pdf');"data-src="picture/std/GBT19228.1-2011_cover.jpg"><span class="lb_book-title">GB/T 19228.1-2011《不锈钢卡压式管件组件 第1部分 卡压式管件》</span></div>
             </div>
         </div>
 
@@ -1147,7 +1148,7 @@
 
 
     <!-- footer 页脚 -->
-    <footer id="contact" class="section site-footer">
+    <footer id="contact" class="section site-footer lazyload" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7') center center no-repeat #1f2f46;" data-src="static/images/contact.jpg">
         <div class="container">
             <h2 class="text-center inverse text-capitalize">联系我们</h2>
             <!--Request form 留言表单-->
