@@ -87,10 +87,11 @@ nav.navbar {
 
     /* 背景毛玻璃效果，在Chrome浏览器有bug，会导致fixed的导航栏定位失败 */
 
-    /*
+/*
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
 */
+
 
 }
 
@@ -311,7 +312,7 @@ nav.navbar .navbar-nav > li > a.active {
 
 @media screen and (max-width:767px) {
     .navbar-inverse .pmd-navbar-sidebar {
-        background-color: rgba(255, 255, 255, 0.9);
+        background-color: rgba(255, 255, 255, 0.92);
         backdrop-filter: blur(4px);
         -webkit-backdrop-filter: blur(4px);
     }
@@ -671,7 +672,6 @@ nav.navbar .navbar-nav > li > a.active {
     }
 }
 
-
 /* ----------------------------
 	Products section
 ---------------------------- */
@@ -822,12 +822,12 @@ nav.navbar .navbar-nav > li > a.active {
     line-height: 1;
 }
 
-.member-biography {
+.member-detail {
     padding: 15px 30px 30px;
     clear: both;
 }
 
-.member-biography p:last-child {
+.member-detail p:last-child {
     margin-bottom: 0;
 }
 
@@ -1609,8 +1609,8 @@ div.spinner i:nth-child(8) {
 
 .lb_thumb {
     border: none;
-    width: 140px;
-    height: 200px;
+    width: 180px;
+    height: 260px;
     text-align: center;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;

@@ -760,8 +760,8 @@ $(function () {
 
 $(document).ready(function () {
     $('.contents').btnLoadmore({
-        showItem: 6,
-        whenClickBtn: 4,
+        showItem: 5,
+        whenClickBtn: 5,
         textBtn: '--- 加载更多 ---'
     });
 });
