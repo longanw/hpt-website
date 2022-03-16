@@ -27,7 +27,7 @@
 	Section Common Style
 ---------------------------- */
 .section {
-    padding: 60px 0 80px 0;
+    padding: 40px 0 40px 0;
 }
 
 /* Section Common Media Queries */
@@ -87,7 +87,7 @@ nav.navbar {
 
     /* 背景毛玻璃效果，在Chrome浏览器有bug，会导致fixed的导航栏定位失败 */
 
-/*
+    /*
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
 */
@@ -312,7 +312,7 @@ nav.navbar .navbar-nav > li > a.active {
 
 @media screen and (max-width:767px) {
     .navbar-inverse .pmd-navbar-sidebar {
-        background-color: rgba(255, 255, 255, 0.92);
+        background-color: rgba(255, 255, 255, 0.90);
         backdrop-filter: blur(4px);
         -webkit-backdrop-filter: blur(4px);
     }
@@ -1482,7 +1482,7 @@ div.spinner i:nth-child(8) {
 /*手机底部栏*/
 
 .tab-bar {
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(255, 255, 255, 0.9);
     height: 60px;
     position: fixed;
     bottom: 0;
@@ -1490,6 +1490,8 @@ div.spinner i:nth-child(8) {
     z-index: 99;
     box-shadow: 0 0px 10px #e8e6e6;
     padding: 0 20px;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
 }
 
 .tab-bar li {
@@ -1669,3 +1671,4 @@ div.spinner i:nth-child(8) {
     transform: none;
     box-shadow: 1px 0 12px rgba(0, 0, 0, .6)
 }
+
