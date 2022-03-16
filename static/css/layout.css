@@ -781,6 +781,12 @@ nav.navbar .navbar-nav > li > a.active {
   outline: none;
 }
 
+@media screen and (max-width:767px) {
+  .modal {
+    position: relative!important;
+  }
+}
+
 .member-informations {
   text-align: left;
   padding: 30px;
