@@ -1501,7 +1501,7 @@ div.spinner i:nth-child(8) {
 }
 
 .tab-bar li {
-  width: 33.33333%;
+  width: 30%;
   float: left;
   list-style-type: none
 }
