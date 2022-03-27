@@ -3,7 +3,11 @@
   font-family: 'Material Icons';
   font-style: normal;
   font-weight: 400;
-  src: url(../fonts/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format('woff2');
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(../fonts/MaterialIcons-Regular.woff2) format('woff2'),
+    url(../fonts/MaterialIcons-Regular.woff) format('woff'),
+    url(../fonts/MaterialIcons-Regular.ttf) format('truetype');
 }
 
 .material-icons {
@@ -783,7 +787,7 @@ nav.navbar .navbar-nav > li > a.active {
 
 @media screen and (max-width:767px) {
   .modal {
-    position: relative!important;
+    position: relative !important;
   }
 }
 
