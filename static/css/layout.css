@@ -772,9 +772,9 @@ nav.navbar .navbar-nav > li > a.active {
   position: absolute;
   top: 8px;
   right: 10px;
-  color: #fff;
+  color: #000;
   font-weight: 300;
-  opacity: 0.7;
+  opacity: 0.3;
 }
 
 .modal .close:hover {
@@ -787,7 +787,7 @@ nav.navbar .navbar-nav > li > a.active {
 
 @media screen and (max-width:767px) {
   .modal {
-    position: relative !important;
+    position: relative;
   }
 }
 
@@ -1681,4 +1681,163 @@ div.spinner i:nth-child(8) {
   -ms-transform: none;
   transform: none;
   box-shadow: 1px 0 12px rgba(0, 0, 0, .6)
+}
+
+
+/*黑白显示样式*/
+.site-gray {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+  _filter: none
+}
+
+/*页面倾斜*/
+.incline {
+  -webkit-transform: rotate(-2deg);
+  -moz-transform: rotate(-2deg);
+  -ms-transform: rotate(-2deg);
+  -o-transform: rotate(-2deg);
+}
+
+/*日历样式*/
+
+table {
+  border: 0
+}
+
+#cal {
+  width: 434px;
+  border: 1px solid #c3d9ff;
+  font-size: 12px;
+  margin: 8px 0 0 15px
+}
+
+#cal #top {
+  height: 29px;
+  line-height: 29px;
+  background: #e7eef8;
+  color: #003784;
+  padding-left: 70px
+}
+
+#cal #top select {
+  font-size: 12px
+}
+
+#cal #top input {
+  padding: 0
+}
+
+#cal ul#wk {
+  margin: 0;
+  padding: 0;
+  height: 25px
+}
+
+#cal ul#wk li {
+  float: left;
+  width: 60px;
+  text-align: center;
+  line-height: 25px;
+  list-style: none
+}
+
+#cal ul#wk li b {
+  font-weight: normal;
+  color: #c60b02
+}
+
+#cal #cm {
+  clear: left;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px dotted #ddd;
+  position: relative
+}
+
+#cal #cm .cell {
+  position: absolute;
+  width: 42px;
+  height: 36px;
+  text-align: center;
+  margin: 0 0 0 9px
+}
+
+#cal #cm .cell .so {
+  font: bold 16px arial;
+}
+
+#cal #bm {
+  text-align: right;
+  height: 24px;
+  line-height: 24px;
+  padding: 0 13px 0 0
+}
+
+#cal #bm a {
+  color: 7977ce
+}
+
+#cal #fd {
+  display: none;
+  position: absolute;
+  border: 1px solid #dddddf;
+  background: #feffcd;
+  padding: 10px;
+  line-height: 21px;
+  width: 150px
+}
+
+#cal #fd b {
+  font-weight: normal;
+  color: #c60a00
+}
+
+.calendar {
+  width: 120px;
+  height: 35px;
+  position: fixed;
+  top: 20px;
+  right: 10px;
+  text-align: center;
+  font-size: 10px;
+  z-index: 1031
+}
+
+@media screen and (max-width: 767px) {
+  .calendar {
+    width: 40px;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .calendar {
+    width: 50px;
+    right: 0;
+  }
+}
+
+.nmd {
+  width: 700px;
+  height: 400px;
+  background: #333 url(../images/1213.jpg) center top no-repeat;
+}
+
+@media screen and (max-width: 767px) {
+  .nmd {
+    width: 525px;
+    height: 300px;
+    background: url(../images/1213-md.jpg) center top no-repeat;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nmd {
+    width: 350px;
+    height: 200px;
+    background: url(../images/1213-mobile.jpg) center top no-repeat;
+  }
 }
