@@ -1787,7 +1787,7 @@ table {
   background: #feffcd;
   padding: 10px;
   line-height: 21px;
-  width: 150px
+  width: 160px
 }
 
 #cal #fd b {
@@ -1796,7 +1796,7 @@ table {
 }
 
 .calendar {
-  width: 120px;
+  max-width: 130px;
   height: 35px;
   position: fixed;
   top: 20px;
@@ -1806,16 +1806,9 @@ table {
   z-index: 1031
 }
 
-@media screen and (max-width: 767px) {
-  .calendar {
-    width: 40px;
-    right: 0;
-  }
-}
-
 @media screen and (max-width: 1023px) {
   .calendar {
-    width: 50px;
+    width: 38px;
     right: 0;
   }
 }

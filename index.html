@@ -30,7 +30,6 @@
       var s = document.getElementsByTagName("script")[0];
       s.parentNode.insertBefore(hm, s);
     })();
-
   </script>
 
 </head>
@@ -1367,8 +1366,14 @@
   <widget>
     <!-- 日历插件 -->
     <div class="hidden-xs calendar">
-      <div style="display: inline-block;margin: 0 auto;"><button data-target="#calendar" data-toggle="modal" class="btn btn-sm pmd-btn-fab pmd-btn-flat pmd-ripple-effect btn-primary" type="button" style="vertical-align:baseline; border: 0"><img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="static/images/date-icon.png" style="max-height: 24px" alt="万年历" /></button></div>
-      <div class="visible-lg-inline-block" style="display: inline-block;color: darkblue"><span id="time"></span></div>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm">
+          <div><button data-target="#calendar" data-toggle="modal" class="btn btn-sm pmd-btn-fab pmd-btn-flat pmd-ripple-effect btn-primary" type="button" style="vertical-align:baseline; border: 0"><img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="static/images/date-icon.png" style="max-height: 24px" alt="日历" /></button></div>
+        </div>
+        <div class="col-lg-9">
+          <div class="visible-lg"><span id="time"></span></div>
+        </div>
+      </div>
     </div>
     <div tabindex="-1" class="modal fade" id="calendar" style="display: none;" aria-hidden="true">
       <div class="modal-dialog">
@@ -1470,7 +1475,6 @@
         lazyload();
       }, 2000);
     });
-
   </script>
 
   <script>
@@ -1481,16 +1485,12 @@
         });
       }
     });
-
   </script>
 
   <script>
     $('#nmd-dialog').on('hidden.bs.modal', function(e) {
       $('html').addClass('site-gray');
     })
-
   </script>
 
-</body>
-
-</html>
+</body></html>
