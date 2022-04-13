@@ -1,81 +1,99 @@
 {
-    "lists": [
-        {
-            "pic": "picture/std/CJJT154-2020_cover.jpg",
-            "src": "std%2F5ad145063221e09b0e9a05059c3d0757.pdf",
-            "title": "CJJ/T 154-2020《建筑给水金属管道工程技术标准》"
+  "lists": [
+    {
+      "pic": "picture/std/GBT33926-2017_cover.jpg",
+      "src": "std%2F181620f318404829f16a79e05a34bffe.pdf",
+      "title": "GB/T 33926-2017《不锈钢环压式管件》"
         },
-
-        {
-            "pic": "picture/std/GBT12771-2019_cover.jpg",
-            "src": "std%2F9826df1ba0e37da4a467a29411cfb770.pdf",
-            "title": "GB/T 12771-2019《流体输送用不锈钢焊接钢管》"
+    {
+      "pic": "picture/std/GBT29038-2012_cover.jpg",
+      "src": "std%2F0494e2cda38f8ac38c671b15bc3e7c41.pdf",
+      "title": "GB/T 29038-2012《薄壁不锈钢管道技术规范》"
         },
-
-        {
-            "pic": "picture/std/GB50015-2019_cover.jpg",
-            "src": "std%2F5780f972873e72a7d50ddbb4a51d1ad9.pdf",
-            "title": "GB 50015-2019《建筑给水排水设计标准》"
+    {
+      "pic": "picture/std/GBT19228.3-2012_cover.jpg",
+      "src": "std%2F9dae34b91352802660705caff814229f.pdf",
+      "title": "GB/T 19228.3-2012《不锈钢卡压式管件组件 第3部分 O型橡胶密封圈》"
         },
-
-        {
-            "pic": "picture/std/GBT50378-2019_cover.jpg",
-            "src": "std%2Fbb5f571ce50456b895bf11fe2f266baa.pdf",
-            "title": "GB/T 50378-2019《绿色建筑评价标准》"
+    {
+      "pic": "picture/std/GBT19228.2-2011_cover.jpg",
+      "src": "std%2F49bbeafb35c76da2b3d86162e5378e2a.pdf",
+      "title": "GB/T 19228.2-2011《不锈钢卡压式管件组件 第2部分 连接用薄壁不锈钢管》"
+		},
+    {
+      "pic": "picture/std/GBT19228.1-2011_cover.jpg",
+      "src": "std%2Fac901042db6edd667168ff8c157a2e9f.pdf",
+      "title": "GB/T 19228.1-2011《不锈钢卡压式管件组件 第1部分 卡压式管件》"
+		},
+    {
+      "pic": "picture/std/GBT12771-2019_cover.jpg",
+      "src": "std%2F9826df1ba0e37da4a467a29411cfb770.pdf",
+      "title": "GB/T 12771-2019《流体输送用不锈钢焊接钢管》"
         },
-
-        {
-            "pic": "picture/std/GBT33926-2017_cover.jpg",
-            "src": "std%2F181620f318404829f16a79e05a34bffe.pdf",
-            "title": "GB/T 33926-2017《不锈钢环压式管件》"
+    {
+      "pic": "picture/std/GB50015-2019_cover.jpg",
+      "src": "std%2F5780f972873e72a7d50ddbb4a51d1ad9.pdf",
+      "title": "GB 50015-2019《建筑给水排水设计标准》"
         },
-
-        {
-            "pic": "picture/std/CJJT110-2017_cover.jpg",
-            "src": "std%2F7984c84bf85403266378a392cb77b6a4.pdf",
-            "title": "CJJ/T 110-2017《建筑与小区管道直饮水系统技术规程》"
+    {
+      "pic": "picture/std/GBT50378-2019_cover.jpg",
+      "src": "std%2Fbb5f571ce50456b895bf11fe2f266baa.pdf",
+      "title": "GB/T 50378-2019《绿色建筑评价标准》"
         },
-
-        {
-            "pic": "picture/std/CJT151-2016_cover.jpg",
-            "src": "std%2F6bca2a6521b748950e5ecb228724a235.pdf",
-            "title": "CJ/T 151-2016《薄壁不锈钢管》"
+    {
+      "pic": "picture/std/GBT24511-2017_cover.jpg",
+      "src": "std%2F27bc0aa901a04059e716eaa32180fefe.pdf",
+      "title": "GB/T 24511-2017《承压设备用不锈钢和耐热钢钢板和钢带》"
+		},
+    {
+      "pic": "picture/std/GBT28897-2012_cover.jpg",
+      "src": "std%2Fcee5306da641cdfe5d654a401b3cc24d.pdf",
+      "title": "GB/T 28897-2012《钢塑复合管》"
+		},
+    {
+      "pic": "picture/std/CJJT154-2020_cover.jpg",
+      "src": "std%2F5ad145063221e09b0e9a05059c3d0757.pdf",
+      "title": "CJJ/T 154-2020《建筑给水金属管道工程技术标准》"
         },
-
-        {
-            "pic": "picture/std/CJT152-2016_cover.jpg",
-            "src": "std%2F66ab8f3ddd4968a7e42617ddaf2b4174.pdf",
-            "title": "CJ/T 152-2016《薄壁不锈钢卡压式和沟槽式管件》"
+    {
+      "pic": "picture/std/CJJT110-2017_cover.jpg",
+      "src": "std%2F7984c84bf85403266378a392cb77b6a4.pdf",
+      "title": "CJJ/T 110-2017《建筑与小区管道直饮水系统技术规程》"
         },
-
-        {
-            "pic": "picture/std/CJT466-2014_cover.jpg",
-            "src": "std%2F29c7e6d9a33fa9de017fd534de26ba07.pdf",
-            "title": "CJ/T 466-2014《燃气输送用不锈钢管及双卡压式管件》"
+    {
+      "pic": "picture/std/CJT151-2016_cover.jpg",
+      "src": "std%2F6bca2a6521b748950e5ecb228724a235.pdf",
+      "title": "CJ/T 151-2016《薄壁不锈钢管》"
         },
-
-        {
-            "pic": "picture/std/GBT29038-2012_cover.jpg",
-            "src": "std%2F0494e2cda38f8ac38c671b15bc3e7c41.pdf",
-            "title": "GB/T 29038-2012《薄壁不锈钢管道技术规范》"
+    {
+      "pic": "picture/std/CJT152-2016_cover.jpg",
+      "src": "std%2F66ab8f3ddd4968a7e42617ddaf2b4174.pdf",
+      "title": "CJ/T 152-2016《薄壁不锈钢卡压式和沟槽式管件》"
         },
-
-        {
-            "pic": "picture/std/GBT19228.3-2012_cover.jpg",
-            "src": "std%2F9dae34b91352802660705caff814229f.pdf",
-            "title": "GB/T 19228.3-2012《不锈钢卡压式管件组件 第3部分 O型橡胶密封圈》"
+    {
+      "pic": "picture/std/CJT466-2014_cover.jpg",
+      "src": "std%2F29c7e6d9a33fa9de017fd534de26ba07.pdf",
+      "title": "CJ/T 466-2014《燃气输送用不锈钢管及双卡压式管件》"
         },
-
-        {
-            "pic": "picture/std/GBT19228.2-2011_cover.jpg",
-            "src": "std%2F49bbeafb35c76da2b3d86162e5378e2a.pdf",
-            "title": "GB/T 19228.2-2011《不锈钢卡压式管件组件 第2部分 连接用薄壁不锈钢管》"
+    {
+      "pic": "picture/std/DB4403T60-2020_cover.jpg",
+      "src": "std%2Ff11bc153ddfdd78b36bedfa3be939866.pdf",
+      "title": "DB4403T 60—2020《生活饮用水水质标准》"
         },
-
-        {
-            "pic": "picture/std/GBT19228.1-2011_cover.jpg",
-            "src": "std%2Fac901042db6edd667168ff8c157a2e9f.pdf",
-            "title": "GB/T 19228.1-2011《不锈钢卡压式管件组件 第1部分 卡压式管件》"
+    {
+      "pic": "picture/std/SJG16-2017_cover.jpg",
+      "src": "std%2Ffc3262445d51df30874e80ae4f69736b.pdf",
+      "title": "SJG16-2017《优质饮用水工程技术规程》"
+        },
+    {
+      "pic": "picture/std/TSG07-2019_cover.jpg",
+      "src": "std%2F6d6881ddda8c270f7d966a46ccb4a88f.pdf",
+      "title": "TSG 07-2019《特种设备生产和充装单位许可规则》"
+        },
+    {
+      "pic": "picture/std/10S407-2_cover.jpg",
+      "src": "std%2Fa7c025c737b38990ca6b59b8e446d6dc.pdf",
+      "title": "10S407-2《建筑给水薄壁不锈钢管道安装》(2010年版图集)"
         }
     ]
 }
