@@ -841,6 +841,10 @@ nav.navbar .navbar-nav > li > a.active {
   margin-bottom: 0;
 }
 
+.member-detail span {
+  color: red
+}
+
 /* section- Media Queries */
 @media screen and (max-width: 1300px) {
   .pmd-card-carousel .owl-next {
@@ -1013,7 +1017,7 @@ nav.navbar .navbar-nav > li > a.active {
   width: 120px;
   top: 50%;
   margin-top: -84px;
-
+  text-align: center
 }
 
 div.spinner {
@@ -1342,6 +1346,10 @@ div.spinner i:nth-child(8) {
   height: 50px;
 }
 
+.pmd-floating-action img {
+  height: 100%
+}
+
 .products {
   height: 410px;
 }
@@ -1429,6 +1437,7 @@ div.spinner i:nth-child(8) {
 
 .address {
   text-align: left;
+  color: #fff;
   margin: 50px 0 0;
   border-top: 1px solid #fff;
   padding: 20px 0
@@ -1474,6 +1483,10 @@ div.spinner i:nth-child(8) {
 
 .address .qr-code p {
   padding-left: 18px;
+}
+
+.address a {
+  color: #aaa
 }
 
 .js-load-more {
@@ -1624,6 +1637,7 @@ div.spinner i:nth-child(8) {
   border: none;
   width: 180px;
   height: 260px;
+  margin: 20px;
   text-align: center;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1804,6 +1818,25 @@ table {
   text-align: center;
   font-size: 10px;
   z-index: 1031
+}
+
+.calendar button {
+  vertical-align: baseline;
+  border: 0
+}
+
+.calendar img {
+  max-height: 24px
+}
+
+#calendar .modal-content {
+  width: 465px;
+  height: 380px;
+  text-align: center
+}
+
+#calendar .modal-dialog {
+  padding-left: 70px
 }
 
 @media screen and (max-width: 1023px) {
