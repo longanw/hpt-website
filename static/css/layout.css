@@ -823,7 +823,7 @@ nav.navbar .navbar-nav > li > a.active {
   font-size: 16px;
   color: #fff;
   margin: 11px 0 1px;
-  line-height: 1;
+  line-height: 140%;
 }
 
 .member-informations a {
