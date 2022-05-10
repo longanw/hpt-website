@@ -66,6 +66,16 @@
       "title": "GB/T 28897-2012《钢塑复合管》"
 		},
     {
+      "pic": "picture/std/GBT14976-2012_cover.jpg",
+      "src": "std%2Fa61f26f91b158c3e4027dc783043a2cc.pdf",
+      "title": "GB/T 14976-2012《流体输送用不锈钢无缝钢管》"
+		},
+    {
+      "pic": "picture/std/GBT3091-2015_cover.jpg",
+      "src": "std%2F7102f3dc808ab5b88af1f83b2e62b5ad.pdf",
+      "title": "GB/T 3091-2015《低压流体输送用焊接钢管》"
+	    },
+    {
       "pic": "picture/std/CJJT154-2020_cover.jpg",
       "src": "std%2F5ad145063221e09b0e9a05059c3d0757.pdf",
       "title": "CJJ/T 154-2020《建筑给水金属管道工程技术标准》"
@@ -109,6 +119,26 @@
       "pic": "picture/std/10S407-2_cover.jpg",
       "src": "std%2Fa7c025c737b38990ca6b59b8e446d6dc.pdf",
       "title": "10S407-2《建筑给水薄壁不锈钢管道安装》(2010年版图集)"
+        },
+    {
+      "pic": "picture/std/GBT28708-2012_cover.jpg",
+      "src": "std%2Fdbeae67b1f03922d780588a162d52a48.pdf",
+      "title": "GB/T 28708-2012《管道工程用无缝及焊接钢管尺寸选用规定》"
+        },
+    {
+      "pic": "picture/std/GBT32569-2016_cover.jpg",
+      "src": "std%2F6611c1251b062184e19adeac4e5a1d0c.pdf",
+      "title": "GB/T 32569-2016《海水淡化装置用不锈钢焊接钢管》"
+        },
+    {
+      "pic": "picture/std/GB24512.3-2014_cover.jpg",
+      "src": "std%2Fd13644a3f51cbf71b3918c5b77dbea64.pdf",
+      "title": "GB 24512.3-2014《核电站用无缝钢管 第3部分：不锈钢无缝钢管》"
+        },
+    {
+      "pic": "picture/std/GB30813-2014_cover.jpg",
+      "src": "std%2Fc39f89eef4ceb7730cb8924f91078011.pdf",
+      "title": "GB 30813-2014《核电站用奥氏体不锈钢焊接钢管》"
         }
     ]
 }
