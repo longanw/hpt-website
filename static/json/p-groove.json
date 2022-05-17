@@ -1,0 +1,56 @@
+{
+  "lists": [
+    {
+      "title": "异径直通",
+      "src": "picture/pipe/943315012510.png"
+    },
+    {
+      "title": "沟槽转卡压异径直通",
+      "src": "picture/pipe/943115012510.png"
+    },
+    {
+      "title": "法兰直通",
+      "src": "picture/pipe/943315015018.png"
+    },
+    {
+      "title": "等径三通",
+      "src": "picture/pipe/943315015030.png"
+    },
+    {
+      "title": "中小异径三通",
+      "src": "picture/pipe/943315012530.png"
+    },
+    {
+      "title": "中大异径三通",
+      "src": "picture/pipe/943312515030.png"
+    },
+    {
+      "title": "等径四通",
+      "src": "picture/pipe/943315015040.png"
+    },
+    {
+      "title": "异径四通",
+      "src": "picture/pipe/943315012540.png"
+    },
+    {
+      "title": "45°弯头",
+      "src": "picture/pipe/943315015050.png"
+    },
+    {
+      "title": "90°弯头",
+      "src": "picture/pipe/943315015090.png"
+    },
+    {
+      "title": "直角短弯头",
+      "src": "picture/pipe/943315015077.png"
+    },
+    {
+      "title": "管帽",
+      "src": "picture/pipe/943315015000.png"
+    },
+    {
+      "title": "卡箍",
+      "src": "picture/pipe/943315015060.png"
+    }
+    ]
+}

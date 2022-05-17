@@ -1,0 +1,92 @@
+{
+  "lists": [
+    {
+      "title": "直通",
+      "src": "picture/pipe/941105005010.png"
+    },
+    {
+      "title": "内牙直通",
+      "src": "picture/pipe/941105005011.png"
+    },
+    {
+      "title": "外牙直通",
+      "src": "picture/pipe/941105005013.png"
+    },
+    {
+      "title": "异径直通",
+      "src": "picture/pipe/941105003210.png"
+    },
+    {
+      "title": "等径三通",
+      "src": "picture/pipe/941105005030.png"
+    },
+    {
+      "title": "中小异径三通",
+      "src": "picture/pipe/941105003230.png"
+    },
+    {
+      "title": "中大异径三通",
+      "src": "picture/pipe/941103205030.png"
+    },
+    {
+      "title": "内牙三通",
+      "src": "picture/pipe/941105005031.png"
+    },
+    {
+      "title": "外牙三通",
+      "src": "picture/pipe/941105005033.png"
+    },
+    {
+      "title": "等径四通",
+      "src": "picture/pipe/941105005040.png"
+    },
+    {
+      "title": "异径四通",
+      "src": "picture/pipe/941105003240.png"
+    },
+    {
+      "title": "45°弯头",
+      "src": "picture/pipe/941105005050.png"
+    },
+    {
+      "title": "45°弯头(B型)",
+      "src": "picture/pipe/941105005051.png"
+    },
+    {
+      "title": "外牙活接",
+      "src": "picture/pipe/941105005081.png"
+    },
+    {
+      "title": "90°弯头",
+      "src": "picture/pipe/941105005090.png"
+    },
+    {
+      "title": "90°弯头(B型)",
+      "src": "picture/pipe/941105005099.png"
+    },
+    {
+      "title": "90°内牙弯头",
+      "src": "picture/pipe/941105005091.png"
+    },
+    {
+      "title": "90°外牙弯头",
+      "src": "picture/pipe/941105005093.png"
+    },
+    {
+      "title": "异径直角弯头",
+      "src": "picture/pipe/941105003270.png"
+    },
+    {
+      "title": "直角内牙弯头",
+      "src": "picture/pipe/941105005071.png"
+    },
+    {
+      "title": "管帽",
+      "src": "picture/pipe/941105005000.png"
+    },
+    {
+      "title": "过桥弯",
+      "src": "picture/pipe/941105005020.png"
+    }
+    ]
+}

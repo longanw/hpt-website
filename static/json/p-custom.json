@@ -1,0 +1,36 @@
+{
+  "lists": [
+    {
+      "title": "法兰片",
+      "src": "picture/pipe/640010010008.png"
+    },
+    {
+      "title": "外牙活接",
+      "src": "picture/pipe/640005005014.png"
+    },
+    {
+      "title": "异形件",
+      "src": "picture/pipe/940005005078.png"
+    },
+    {
+      "title": "泵组基座",
+      "src": "picture/pipe/940015000050.png"
+    },
+    {
+      "title": "法兰大小头",
+      "src": "picture/pipe/940005003218.png"
+    },
+    {
+      "title": "法兰直通",
+      "src": "picture/pipe/940005005018.png"
+    },
+    {
+      "title": "活动法兰三通",
+      "src": "picture/pipe/940005005038.png"
+    },
+    {
+      "title": "分水器",
+      "src": "picture/pipe/741805002050.png"
+    }
+    ]
+}

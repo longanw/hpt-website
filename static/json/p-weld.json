@@ -1,0 +1,72 @@
+{
+  "lists": [
+    {
+      "title": "异径直通",
+      "src": "picture/pipe/944405003210.png"
+    },
+    {
+      "title": "内牙直通",
+      "src": "picture/pipe/944405005011.png"
+    },
+    {
+      "title": "外牙直通",
+      "src": "picture/pipe/944405005013.png"
+    },
+    {
+      "title": "外牙活接",
+      "src": "picture/pipe/944405005083.png"
+    },
+    {
+      "title": "等径三通",
+      "src": "picture/pipe/944405005030.png"
+    },
+    {
+      "title": "中小异径三通",
+      "src": "picture/pipe/944405003230.png"
+    },
+    {
+      "title": "中大异径三通",
+      "src": "picture/pipe/944403205030.png"
+    },
+    {
+      "title": "内牙三通",
+      "src": "picture/pipe/944405005031.png"
+    },
+    {
+      "title": "外牙三通",
+      "src": "picture/pipe/944405005033.png"
+    },
+    {
+      "title": "等径四通",
+      "src": "picture/pipe/944405005040.png"
+    },
+    {
+      "title": "异径四通",
+      "src": "picture/pipe/944403205040.png"
+    },
+    {
+      "title": "45°弯头",
+      "src": "picture/pipe/944405005050.png"
+    },
+    {
+      "title": "90°弯头",
+      "src": "picture/pipe/944405005090.png"
+    },
+    {
+      "title": "内牙弯头",
+      "src": "picture/pipe/944405005091.png"
+    },
+    {
+      "title": "内牙短弯头",
+      "src": "picture/pipe/944405005071.png"
+    },
+    {
+      "title": "外牙弯头",
+      "src": "picture/pipe/944405005093.png"
+    },
+    {
+      "title": "异径短弯头",
+      "src": "picture/pipe/944405003277.png"
+    }
+    ]
+}
