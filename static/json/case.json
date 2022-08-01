@@ -1,5 +1,13 @@
 {
   "lists": [
+      {
+        "number": "17",
+        "src": "picture/case/case-gz-kangrenxuexiao.jpg",
+        "title": "南沙港人子弟学校",
+        "date": "2022-06",
+        "description": "J1、J2区各配置一套“二用一备”组合泵组，304不锈钢管件",
+        "text": "主进水管为DN200不锈钢管，进出水连通管均采用沟槽连接，按水流方向，进水段依次为DN150平顶吸支管、闸阀、软接头和DN150×DN100偏心大小头，出水段依次为DN150×DN100同心大小弯头/DN100弯头、软接头、闸阀、DN150/DN100中心吸支管和DN200/DN150出水连通管。"
+  		},
     {
       "number": "16",
       "src": "picture/case/case-sz-shuilanwan.webp",
@@ -26,8 +34,8 @@
 		},
     {
       "number": "13",
-      "src": "picture/case/case-sz-tianjianhuayuan.webp",
-      "title": "深圳天健花园",
+      "src": "picture/case/case-sz-tianjiantianjiao.jpg",
+      "title": "深圳天健天骄",
       "date": "2021-11",
       "description": "家装冷热水系统",
       "text": "304覆塑薄壁不锈钢水管，包括DN15-DN32环压式的管材、三通、弯头、直通及螺纹接头等。"

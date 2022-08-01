@@ -1846,6 +1846,28 @@ table {
   }
 }
 
+.nationalday {
+  width: 639px;
+  height: 359px;
+  background: #333 url(../images/1001.gif) center top no-repeat;
+}
+
+@media screen and (max-width: 767px) {
+  .nationalday {
+    width: 500px;
+    height: 319px;
+    background: url(../images/1001-md.gif) center top no-repeat;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nationalday {
+    width: 350px;
+    height: 625px;
+    background: url(../images/1001-mobile.gif) center top no-repeat;
+  }
+}
+
 .nmd {
   width: 700px;
   height: 400px;

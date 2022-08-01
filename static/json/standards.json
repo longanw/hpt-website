@@ -96,6 +96,11 @@
       "title": "CJ/T 152-2016《薄壁不锈钢卡压式和沟槽式管件》"
         },
     {
+      "pic": "picture/std/CJT117-2018_cover.jpg",
+      "src": "std%2F7a3c9cdf2031fda342274acaacde0bf8.pdf",
+      "title": "CJ/T 117-2018《建筑用承插式金属管管件》"
+        },
+    {
       "pic": "picture/std/CJT466-2014_cover.jpg",
       "src": "std%2F29c7e6d9a33fa9de017fd534de26ba07.pdf",
       "title": "CJ/T 466-2014《燃气输送用不锈钢管及双卡压式管件》"
@@ -124,6 +129,11 @@
       "pic": "picture/std/GBT28708-2012_cover.jpg",
       "src": "std%2Fdbeae67b1f03922d780588a162d52a48.pdf",
       "title": "GB/T 28708-2012《管道工程用无缝及焊接钢管尺寸选用规定》"
+        },
+    {
+      "pic": "picture/std/GBT9119-2010_cover.jpg",
+      "src": "std%2F57d22e2f90f03d778912b032b132c681.pdf",
+      "title": "GB/T 9119-2010《板式平焊钢制管法兰》"
         },
     {
       "pic": "picture/std/GBT32569-2016_cover.jpg",
